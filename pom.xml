@@ -12,6 +12,7 @@
     <module>ch-02-mrintro</module>
     <module>hadoop-meta</module>
     <module>hadoop-examples</module>
+    <module>ch03-hdfs</module>
   </modules>
   <packaging>pom</packaging>
   <name>Hadoop: The Definitive Guide, Example Code</name>
