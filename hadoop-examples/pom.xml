@@ -24,11 +24,11 @@
       <artifactId>ch02-mr-intro</artifactId>
       <version>4.0</version>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>com.hadoopbook</groupId>-->
-<!--      <artifactId>ch03-hdfs</artifactId>-->
-<!--      <version>4.0</version>-->
-<!--    </dependency>-->
+    <dependency>
+      <groupId>com.hadoopbook</groupId>
+      <artifactId>ch03-hdfs</artifactId>
+      <version>4.0</version>
+    </dependency>
 <!--    <dependency>-->
 <!--      <groupId>com.hadoopbook</groupId>-->
 <!--      <artifactId>ch05-io</artifactId>-->
