@@ -13,6 +13,7 @@
     <module>hadoop-meta</module>
     <module>hadoop-examples</module>
     <module>ch03-hdfs</module>
+    <module>ch05-io</module>
   </modules>
   <packaging>pom</packaging>
   <name>Hadoop: The Definitive Guide, Example Code</name>

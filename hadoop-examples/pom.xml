@@ -29,11 +29,11 @@
       <artifactId>ch03-hdfs</artifactId>
       <version>4.0</version>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>com.hadoopbook</groupId>-->
-<!--      <artifactId>ch05-io</artifactId>-->
-<!--      <version>4.0</version>-->
-<!--    </dependency>-->
+    <dependency>
+      <groupId>com.hadoopbook</groupId>
+      <artifactId>ch05-io</artifactId>
+      <version>4.0</version>
+    </dependency>
 <!--    <dependency>-->
 <!--      <groupId>com.hadoopbook</groupId>-->
 <!--      <artifactId>ch06-mr-dev</artifactId>-->
