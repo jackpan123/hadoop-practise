@@ -14,6 +14,7 @@
     <module>hadoop-examples</module>
     <module>ch03-hdfs</module>
     <module>ch05-io</module>
+    <module>ch06-mr-dev</module>
   </modules>
   <packaging>pom</packaging>
   <name>Hadoop: The Definitive Guide, Example Code</name>
