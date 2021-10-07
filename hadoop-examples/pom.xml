@@ -14,11 +14,11 @@
   <name>Hadoop Examples JAR</name>
   <!-- Packages all the Hadoop examples into a single JAR -->
   <dependencies>
-<!--    <dependency>-->
-<!--      <groupId>com.hadoopbook</groupId>-->
-<!--      <artifactId>common</artifactId>-->
-<!--      <version>4.0</version>-->
-<!--    </dependency>-->
+    <dependency>
+      <groupId>com.hadoopbook</groupId>
+      <artifactId>common</artifactId>
+      <version>4.0</version>
+    </dependency>
     <dependency>
       <groupId>com.hadoopbook</groupId>
       <artifactId>ch02-mr-intro</artifactId>

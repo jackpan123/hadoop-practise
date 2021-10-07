@@ -8,21 +8,11 @@
     <relativePath>../hadoop-meta/pom.xml</relativePath>
   </parent>
   <groupId>com.hadoopbook</groupId>
-  <artifactId>ch08-mr-types</artifactId>
+  <artifactId>common</artifactId>
   <packaging>jar</packaging>
   <version>4.0</version>
-  <name>Chapter 8: MapReduce Types and Formats</name>
+  <name>Common Code</name>
   <dependencies>
-    <dependency>
-      <groupId>com.hadoopbook</groupId>
-      <artifactId>common</artifactId>
-      <version>4.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.hadoopbook</groupId>
-      <artifactId>ch02-mr-intro</artifactId>
-      <version>4.0</version>
-    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

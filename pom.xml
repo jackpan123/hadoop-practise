@@ -16,6 +16,7 @@
     <module>ch05-io</module>
     <module>ch06-mr-dev</module>
     <module>ch08-mr-types</module>
+    <module>common</module>
   </modules>
   <packaging>pom</packaging>
   <name>Hadoop: The Definitive Guide, Example Code</name>
