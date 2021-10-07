@@ -39,11 +39,11 @@
       <artifactId>ch06-mr-dev</artifactId>
       <version>4.0</version>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>com.hadoopbook</groupId>-->
-<!--      <artifactId>ch08-mr-types</artifactId>-->
-<!--      <version>4.0</version>-->
-<!--    </dependency>-->
+    <dependency>
+      <groupId>com.hadoopbook</groupId>
+      <artifactId>ch08-mr-types</artifactId>
+      <version>4.0</version>
+    </dependency>
 <!--    <dependency>-->
 <!--      <groupId>com.hadoopbook</groupId>-->
 <!--      <artifactId>ch09-mr-features</artifactId>-->
