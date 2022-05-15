@@ -9,7 +9,7 @@
   <version>4.0</version>
   <modules>
     <module>book</module>
-    <module>ch-02-mrintro</module>
+    <module>ch02-mr-intro</module>
     <module>hadoop-meta</module>
     <module>hadoop-examples</module>
     <module>ch03-hdfs</module>
