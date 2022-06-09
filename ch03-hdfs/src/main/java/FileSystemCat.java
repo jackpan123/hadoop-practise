@@ -1,9 +1,7 @@
 import java.io.InputStream;
 import java.net.URI;
-import java.net.URL;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
-import org.apache.hadoop.fs.FsUrlStreamHandlerFactory;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IOUtils;
 
@@ -21,6 +19,7 @@ public class FileSystemCat {
         try {
             in = fs.open(new Path(uri));
             IOUtils.copyBytes(in, System.out, 4096, false);
+
         } finally {
             IOUtils.closeStream(in);
         }
