@@ -16,7 +16,7 @@ public class URLCat {
     public static void main(String[] args) throws Exception {
         InputStream in = null;
         try {
-//            in = new URL("hdfs://localhost/user/jackpan/quangle.txt").openStream();
+//            in = new URL("hdfs://localhost/user/jackpan/sample_mnm.txt").openStream();
             in = new URL(args[0]).openStream();
             IOUtils.copyBytes(in, System.out, 4096, false);
         } finally {
