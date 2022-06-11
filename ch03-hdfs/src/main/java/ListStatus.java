@@ -21,11 +21,10 @@ public class ListStatus {
         for (int i = 0; i < paths.length; i++) {
             paths[i] = new Path(args[i]);
         }
-
         FileStatus[] status = fs.listStatus(paths);
-        Path[] listPaths = FileUtil.stat2Paths(status);
-        for (Path listPath : listPaths) {
-            System.out.println(listPath);
+        Path[] listedPaths = FileUtil.stat2Paths(status);
+        for (Path path : listedPaths) {
+            System.out.println(path);
         }
     }
 
