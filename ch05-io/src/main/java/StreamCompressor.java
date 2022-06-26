@@ -5,6 +5,8 @@ import org.apache.hadoop.io.compress.CompressionOutputStream;
 import org.apache.hadoop.util.ReflectionUtils;
 
 /**
+ * echo "Text" | hadoop jar hadoop-examples.jar StreamCompressor \
+ * org.apache.hadoop.io.compress.GzipCodec | gunzip
  * @author jackpan
  * @version v1.0 2021/9/8 19:23
  */
@@ -15,7 +17,6 @@ public class StreamCompressor {
         Class<?> codecClass = Class.forName(codecClassname);
         Configuration conf = new Configuration();
         CompressionCodec codec = (CompressionCodec) ReflectionUtils.newInstance(codecClass, conf);
-
         CompressionOutputStream out = codec.createOutputStream(System.out);
         IOUtils.copyBytes(System.in, out, 4096, false);
         out.finish();
