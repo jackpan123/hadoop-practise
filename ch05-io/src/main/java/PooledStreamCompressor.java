@@ -3,7 +3,9 @@ import org.apache.hadoop.io.IOUtils;
 import org.apache.hadoop.io.compress.*;
 import org.apache.hadoop.util.ReflectionUtils;
 
-/**
+/** echo "Hello World" | hadoop jar hadoop-examples.jar PooledStreamCompressor \
+ *  org.apache.hadoop.io.compress.GzipCodec | gunzip
+ *
  * @author jackpan
  * @version v1.0 2021/9/9 13:17
  */
@@ -13,14 +15,17 @@ public class PooledStreamCompressor {
         String codecClassname = args[0];
         Class<?> codecClass = Class.forName(codecClassname);
         Configuration conf = new Configuration();
+        // Create codec.
         CompressionCodec codec = (CompressionCodec) ReflectionUtils.newInstance(codecClass, conf);
         Compressor compressor = null;
         try {
+            // Get compressor from Codec pool in order to save resource.
             compressor = CodecPool.getCompressor(codec);
             CompressionOutputStream out = codec.createOutputStream(System.out, compressor);
             IOUtils.copyBytes(System.in, out, 4096, false);
             out.finish();
         } finally {
+            // Return compressor.
             CodecPool.returnCompressor(compressor);
         }
     }
