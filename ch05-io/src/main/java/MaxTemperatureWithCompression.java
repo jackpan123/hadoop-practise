@@ -7,6 +7,9 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 /**
+ * 配置文件形式。mapreduce.output.fileoutputformat.compress设置true,
+ * mapreduce.output.fileoutputformat.compress.codec设置为打算使用压缩的类名
+ * hadoop jar hadoop-examples.jar MaxTemperatureWithCompression input/ncdc/sample.txt.gz output
  * @author jackpan
  * @version v1.0 2021/9/9 13:31
  */
