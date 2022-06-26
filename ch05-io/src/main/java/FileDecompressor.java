@@ -10,6 +10,7 @@ import org.apache.hadoop.io.compress.CompressionCodec;
 import org.apache.hadoop.io.compress.CompressionCodecFactory;
 
 /**
+ * hadoop jar hadoop-examples.jar FileDecompressor /user/jackpan/hadoop-3.3.3-site.tar.gz
  * @author jackpan
  * @version v1.0 2021/9/9 12:37
  */
@@ -22,6 +23,7 @@ public class FileDecompressor {
 
         Path inputPath = new Path(uri);
         CompressionCodecFactory factory = new CompressionCodecFactory(conf);
+        // Get compression codec according to file suffix.
         CompressionCodec codec = factory.getCodec(inputPath);
         if (codec == null) {
             System.err.println("No codec found for " + uri);
@@ -29,8 +31,10 @@ public class FileDecompressor {
         }
 
         String outputUri = CompressionCodecFactory.removeSuffix(uri, codec.getDefaultExtension());
+
         InputStream in = null;
         OutputStream out = null;
+
         try {
             in = codec.createInputStream(fs.open(inputPath));
             out = fs.create(new Path(outputUri));
@@ -39,5 +43,6 @@ public class FileDecompressor {
             IOUtils.closeStream(in);
             IOUtils.closeStream(out);
         }
+
     }
 }
