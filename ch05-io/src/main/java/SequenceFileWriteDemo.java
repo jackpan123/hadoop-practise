@@ -28,8 +28,6 @@ public class SequenceFileWriteDemo {
         Configuration conf = new Configuration();
         FileSystem fs = FileSystem.get(URI.create(uri), conf);
         Path path = new Path(uri);
-        System.out.println(path.toUri().toString());
-
         IntWritable key = new IntWritable();
         Text value = new Text();
         SequenceFile.Writer writer = null;
