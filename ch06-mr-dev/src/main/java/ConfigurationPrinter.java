@@ -3,6 +3,7 @@ import org.apache.hadoop.conf.*;
 import org.apache.hadoop.util.*;
 
 /**
+ * Get hadoop configuration.
  * @author jackpan
  * @version v1.0 2021/9/23 12:44
  */
