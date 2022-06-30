@@ -24,6 +24,7 @@ public class SequenceFileReadDemo {
         SequenceFile.Reader reader = null;
         try {
             reader = new SequenceFile.Reader(fs, path, conf);
+            // Use reflection.
             Writable key = (Writable) ReflectionUtils.newInstance(reader.getKeyClass(), conf);
             Writable value = (Writable) ReflectionUtils.newInstance(reader.getValueClass(), conf);
             long position = reader.getPosition();
