@@ -9,6 +9,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 import v2.NcdcRecordParser;
 
 /**
+ * MaxTemperatureMapper
  * @author jackpan
  * @version v1.0 2021/9/24 12:53
  */
