@@ -39,7 +39,7 @@ public class MaxTemperatureDriverMiniTest extends ClusterMapReduceTestCase {
     public void test() throws Exception {
         Configuration conf = createJobConf();
 
-        Path localInput = new Path("/Users/jackpan/JackPanDocuments/jack-learning/hadoop-book-parent/hadoop-practise/input/ncdc/micro");
+        Path localInput = new Path("input/ncdc/micro");
         Path input = getInputDir();
         Path output = getOutputDir();
 
