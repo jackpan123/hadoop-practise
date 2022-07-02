@@ -56,5 +56,8 @@ public class MaxTemperatureMapperTest {
                 .withCounters(counters)
                 .runTest();
 
+        Counter c = counters.findCounter(MaxTemperatureMapper.Temperature.MALFORMED);
+        assertThat(c.getValue(), is(1L));
+
     }
 }
