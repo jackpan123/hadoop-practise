@@ -1,14 +1,17 @@
 
 import java.io.*;
+
 import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.util.StringUtils;
+
 /**
+ * WritableTestBase
+ *
  * @author jackpan
  * @version v1.0 2021/9/16 13:00
  */
 public class WritableTestBase {
 
-    // vv WritableTestBase
     public static byte[] serialize(Writable writable) throws IOException {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         DataOutputStream dataOut = new DataOutputStream(out);
@@ -16,18 +19,15 @@ public class WritableTestBase {
         dataOut.close();
         return out.toByteArray();
     }
-    // ^^ WritableTestBase
 
-    // vv WritableTestBase-Deserialize
     public static byte[] deserialize(Writable writable, byte[] bytes)
-        throws IOException {
+            throws IOException {
         ByteArrayInputStream in = new ByteArrayInputStream(bytes);
         DataInputStream dataIn = new DataInputStream(in);
         writable.readFields(dataIn);
         dataIn.close();
         return bytes;
     }
-    // ^^ WritableTestBase-Deserialize
 
     public static String serializeToString(Writable src) throws IOException {
         return StringUtils.byteToHexString(serialize(src));
