@@ -2,6 +2,7 @@ import java.io.*;
 
 import org.apache.hadoop.io.*;
 /**
+ * TextPair class
  * @author jackpan
  * @version v1.0 2021/9/16 12:30
  */
