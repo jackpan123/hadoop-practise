@@ -14,7 +14,7 @@
       <scope>runtime</scope>
       <useTransitiveDependencies>false</useTransitiveDependencies>
       <includes>
-        <include>com.hadoopbook:*</include>
+        <include>com.jackpan:*</include>
       </includes>
     </dependencySet>
   </dependencySets>

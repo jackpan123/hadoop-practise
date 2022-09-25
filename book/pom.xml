@@ -3,12 +3,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.hadoopbook</groupId>
-  <artifactId>book</artifactId>
+  <groupId>com.jackpan</groupId>
+  <artifactId>practise</artifactId>
   <packaging>pom</packaging>
   <version>4.0</version>
-  <name>Hadoop: The Definitive Guide, Project</name>
-  <url>http://hadoopbook.com</url>
+  <name>Hadoop: Practise</name>
+  <url>http://jackpan.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

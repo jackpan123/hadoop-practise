@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.hadoopbook</groupId>
-    <artifactId>book</artifactId>
+    <groupId>com.jackpan</groupId>
+    <artifactId>practise</artifactId>
     <version>4.0</version>
     <relativePath>../book/pom.xml</relativePath>
   </parent>
-  <groupId>com.hadoopbook</groupId>
+  <groupId>com.jackpan</groupId>
   <artifactId>hadoop-examples</artifactId>
   <packaging>pom</packaging>
   <version>4.0</version>
@@ -15,37 +15,37 @@
   <!-- Packages all the Hadoop examples into a single JAR -->
   <dependencies>
     <dependency>
-      <groupId>com.hadoopbook</groupId>
+      <groupId>com.jackpan</groupId>
       <artifactId>common</artifactId>
       <version>4.0</version>
     </dependency>
     <dependency>
-      <groupId>com.hadoopbook</groupId>
+      <groupId>com.jackpan</groupId>
       <artifactId>ch02-mr-intro</artifactId>
       <version>4.0</version>
     </dependency>
     <dependency>
-      <groupId>com.hadoopbook</groupId>
+      <groupId>com.jackpan</groupId>
       <artifactId>ch03-hdfs</artifactId>
       <version>4.0</version>
     </dependency>
     <dependency>
-      <groupId>com.hadoopbook</groupId>
+      <groupId>com.jackpan</groupId>
       <artifactId>ch05-io</artifactId>
       <version>4.0</version>
     </dependency>
     <dependency>
-      <groupId>com.hadoopbook</groupId>
+      <groupId>com.jackpan</groupId>
       <artifactId>ch06-mr-dev</artifactId>
       <version>4.0</version>
     </dependency>
     <dependency>
-      <groupId>com.hadoopbook</groupId>
+      <groupId>com.jackpan</groupId>
       <artifactId>ch08-mr-types</artifactId>
       <version>4.0</version>
     </dependency>
     <dependency>
-      <groupId>com.hadoopbook</groupId>
+      <groupId>com.jackpan</groupId>
       <artifactId>ch09-mr-features</artifactId>
       <version>4.0</version>
     </dependency>
