@@ -6,6 +6,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 /**
+ * MaxTemperature class
  * @author jackpan
  * @version v1.0 2021/8/30 19:22
  */
