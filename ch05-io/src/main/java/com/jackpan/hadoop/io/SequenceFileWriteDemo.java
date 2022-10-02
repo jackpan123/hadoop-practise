@@ -1,5 +1,4 @@
-import java.io.IOException;
-import java.net.URI;
+package com.jackpan.hadoop.io;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
@@ -9,10 +8,15 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.SequenceFile;
 import org.apache.hadoop.io.Text;
 
+import java.io.IOException;
+import java.net.URI;
+
 /**
- * @author jackpan
- * @version v1.0 2021/9/18 12:52
- */
+ * SequenceFileWriteDemo操作类
+ *
+ * @author JackPan
+ * @date 2022/10/02 23:03
+ **/
 public class SequenceFileWriteDemo {
 
     private static final String[] DATA = {
@@ -26,13 +30,15 @@ public class SequenceFileWriteDemo {
     public static void main(String[] args) throws IOException {
         String uri = args[0];
         Configuration conf = new Configuration();
-                        FileSystem fs = FileSystem.get(URI.create(uri), conf);
+        FileSystem fs = FileSystem.get(URI.create(uri), conf);
         Path path = new Path(uri);
+
         IntWritable key = new IntWritable();
         Text value = new Text();
         SequenceFile.Writer writer = null;
         try {
             writer = SequenceFile.createWriter(fs, conf, path, key.getClass(), value.getClass());
+
             for (int i = 0; i < 100; i++) {
                 key.set(100 - i);
                 value.set(DATA[i % DATA.length]);
