@@ -29,6 +29,7 @@ public class StockFilterJob {
 //            }
 
             Configuration configuration = HBaseConfiguration.create();
+            configuration.addResource("hbase-site.xml");
             final Job job = Job.getInstance(configuration, "phoenix-mr-job");
 
 // We can either specify a selectQuery or ignore it when we would like to retrieve all the columns
