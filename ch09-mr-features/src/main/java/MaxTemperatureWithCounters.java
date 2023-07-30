@@ -1,5 +1,6 @@
 import java.io.IOException;
 
+import cn.panshell.hadoop.mr.MaxTemperatureReducer;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;

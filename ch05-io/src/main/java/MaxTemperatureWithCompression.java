@@ -1,3 +1,6 @@
+import cn.panshell.hadoop.mr.MaxTemperature;
+import cn.panshell.hadoop.mr.MaxTemperatureMapper;
+import cn.panshell.hadoop.mr.MaxTemperatureReducer;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
